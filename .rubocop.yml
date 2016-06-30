@@ -1,0 +1,15 @@
+---
+AllCops:
+  Exclude:
+    - compile-extensions/**/*
+    - vendor/**/*
+Documentation:
+  Enabled: false
+LineLength:
+  Enabled: false
+MethodLength:
+  Max: 18
+ParameterLists:
+  Max: 9
+Metrics/AbcSize:
+  Max: 30

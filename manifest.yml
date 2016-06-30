@@ -1,0 +1,23 @@
+---
+language: dotnet-core
+
+url_to_dependency_map:
+  - match: libunwind-(.*)-(\d+\.\d+)
+    name: libunwind
+    version: $2
+
+dependencies:
+  - name: libunwind
+    version: 1.1
+    cf_stacks:
+      - cflinuxfs2
+    uri: https://github.com/cloudfoundry-community/asp.net5-buildpack/releases/download/v0.7/libunwind-cflinuxfs2-1.1.tar.gz
+    md5: b76452a8a2400f3cfdf189761e8be97e
+
+exclude_files:
+  - .git/
+  - .gitignore
+  - .gitmodules
+  - spec/
+  - cf_spec/
+  - dotnet-core_buildpack-*v*.zip
